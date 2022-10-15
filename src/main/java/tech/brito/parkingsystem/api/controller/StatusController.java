@@ -1,4 +1,4 @@
-package tech.brito.parkingsystem.controller;
+package tech.brito.parkingsystem.api.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
