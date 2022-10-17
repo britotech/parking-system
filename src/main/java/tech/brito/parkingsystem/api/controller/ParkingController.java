@@ -47,7 +47,7 @@ public class ParkingController {
     }
 
     @PostMapping("/checkin")
-    public ResponseEntity<Object> checkIn(@RequestBody @Valid CheckInRequest checkInRequest) {
+    public ResponseEntity<VehicleResponse> checkIn(@RequestBody @Valid CheckInRequest checkInRequest) {
         if (!parkingService.CheckParkingAvailability()) {
             throw new NoParkingSpacesAvailableException();
         }
