@@ -11,6 +11,7 @@ public enum ProblemType {
     INCOMPREHENSIBLE_MESSAGE("/incomprehensible-message", "Incomprehensible message"),
     RESOURCE_NOT_FOUND("/resource-not-found", "Resource not found"),
 
+    UNAUTHORIZED("/unauthorized", "Unauthorized"),
     UNPROCESSABLE_ENTITY("/unprocessable_entity", "Unprocessable entity"),
     ACCESS_DENIED("/access-denied", "Access denied"),
     BUSINESS_RULE_VIOLATION("/business-rule-violation", "Business rule violation");

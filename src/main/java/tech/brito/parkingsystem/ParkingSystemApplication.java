@@ -12,5 +12,4 @@ public class ParkingSystemApplication {
         TimeZone.setDefault(TimeZone.getTimeZone("UTC"));
         SpringApplication.run(ParkingSystemApplication.class, args);
     }
-
 }

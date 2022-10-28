@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS public.vehicle
+CREATE TABLE IF NOT EXISTS public.tb_vehicle
 (
     id         uuid          NOT NULL,
     color      varchar(20)   NOT NULL,
@@ -11,4 +11,4 @@ CREATE TABLE IF NOT EXISTS public.vehicle
     CONSTRAINT vehicle_pk PRIMARY KEY (id)
  );
 
-ALTER TABLE IF EXISTS public.tb_course OWNER to postgres;
+ALTER TABLE IF EXISTS public.tb_vehicle OWNER to postgres;

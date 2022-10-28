@@ -62,6 +62,9 @@ public class DatabaseCleaner {
         }
 
         tableNames.remove("flyway_schema_history");
+        tableNames.remove("tb_user");
+        tableNames.remove("tb_role");
+        tableNames.remove("tb_user_role");
         return tableNames;
     }
 
@@ -80,7 +83,7 @@ public class DatabaseCleaner {
     private void addTruncateSatements(List<String> tableNames, Statement statement) {
         tableNames.forEach(tableName -> {
             try {
-                statement.addBatch(sql("TRUNCATE TABLE " + tableName));
+                statement.addBatch(sql("TRUNCATE TABLE " + tableName +  " RESTART IDENTITY CASCADE"));
             } catch (SQLException e) {
                 throw new RuntimeException(e);
             }

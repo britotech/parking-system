@@ -18,7 +18,7 @@ import static tech.brito.parkingsystem.core.Constants.*;
 @Getter
 @Setter
 @Entity
-@Table(name = "vehicle")
+@Table(name = "tb_vehicle")
 public class Vehicle {
 
     @Id
